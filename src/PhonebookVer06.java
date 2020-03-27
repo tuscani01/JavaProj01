@@ -27,9 +27,9 @@ public class PhoneBookVer06 implements MenuItem{
 				
 				if(user == dataInput) {
 					pm.dataInput();
-				} else if(user == dataSearch) {
+				} else if(user == dataSearch) { //데이터검색
 					pm.dataSearch();
-				} else if(user == dataDelete) {
+				} else if(user == dataDelete) { //데이터삭제
 					pm.dataDelete();
 				} else if(user == dataAllShow) {
 					pm.dataAllShow();
