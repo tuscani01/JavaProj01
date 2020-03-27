@@ -1,4 +1,4 @@
-package ver02;
+package ver04;
 
 public class PhoneInfo
 {
@@ -16,7 +16,7 @@ public class PhoneInfo
 		this.birthday = birthday;
 	}
 	//생년월일 필수사항 아니며 인자 없는 경우 null로 초기화
-	public PhoneInfo(String name, String phoneNumber, String birthday)
+	public PhoneInfo(String name, String phoneNumber)
 	{
 		super();
 		this.name = name;
