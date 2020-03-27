@@ -8,7 +8,11 @@ public class PhonebookVer01
 	
 		Phoneinfo p1 = new Phoneinfo("토니스탁", "010-1234-6575", "70-01-05");
 		Phoneinfo p2 = new Phoneinfo("브루스배너", "010-1256-6775");
+<<<<<<< HEAD
 		Phoneinfo p3 = new Phoneinfo("브루스웨인", "010-1256-6775");
+=======
+		
+>>>>>>> refs/remotes/origin/master
 		
 		p1.showPhoneInfo();
 		p2.showPhoneInfo(); //생년월일 입력X
