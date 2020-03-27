@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import ver01.Phoneinfo;
+import ver01.PhoneInfo;
 
 public class PhonebookVer03
 {
@@ -11,12 +11,12 @@ public class PhonebookVer03
 		class PhoneBookManager{
 			//데이터 저장,검색,삭제
 		}
-		Phoneinfo [] phoneBook;
+		PhoneInfo [] phoneBook;
 		private int count; //전화번호 저장된 사람수
 		Scanner keyboard = new Scanner(System.in);
 		
 		public PhoneBookManager() {
-			phoneBook=new Phoneinfo[100];
+			phoneBook=new PhoneInfo[100];
 			count=0;
 		}
 		//데이터 검색
@@ -74,13 +74,13 @@ public class PhonebookVer03
 		String phoneNumber = keyboard.nextLine();
 		System.out.print("생년월일:");
 		String birthday = keyboard.nextLine();
-		phoneBook[count++] = new Phoneinfo(name,phoneNumber,birthday);
+		phoneBook[count++] = new PhoneInfo(name,phoneNumber,birthday);
 		}
 		
 		
 				
 		}
-		class Phoneinfo{
+		class PhoneInfo{
 			
 			private String name; //이름
 			private String phoneNumber; //핸드폰번호
@@ -119,7 +119,7 @@ public class PhonebookVer03
 		}
 		
 		public static void main(String ar[]) {
-			//Phoneinfo phone;
+			//PhoneInfo phone;
 			PhoneBookManager phoneManager = new PhoneBookManager();
 			
 			while(true) {//무한루프

@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-import ver01.Phoneinfo;
+import ver01.PhoneInfo;
 
 class PhoneBookManager{
 	//데이터 저장,검색,삭제
 }
 
-Phoneinfo [] phoneBook;
+PhoneInfo [] phoneBook;
 private int count; //전화번호부 저장된 사람수
 
 public PhoneBookManager() {
-	phoneBook=new Phoneinfo[100];
+	phoneBook=new PhoneInfo[100];
 	count=0;
 	
 }
@@ -57,7 +57,7 @@ public void removeBook() {
 		}
 	
 		//데이터저장
-	public Phoneinfo readPhoneBook() {//일반
+	public PhoneInfo readPhoneBook() {//일반
 		System.out.print("이름:");
 		String name=MenuViewer.keyboard.nextLine();
 		System.out.print("핸드폰번호:");
@@ -68,7 +68,7 @@ public void removeBook() {
 		int year=MenuViewer.keyboard.nextint();
 		return new PhoneUnivinfo(name,phoneNumber,major,year);
 	}
-	public Phoneinfo readCompBook() {//회사
+	public PhoneInfo readCompBook() {//회사
 		System.out.print("이름:");
 		String name=MenuViewer.keyboard.nextLine();
 		System.out.print("핸드폰번호:");
@@ -189,7 +189,7 @@ public class PhoneInfo{
 	}
 	
 }
-public class PhoneUnivinfo extends Phoneinfo {
+public class PhoneUnivinfo extends PhoneInfo {
 	
 	private String univ;
 	private int year;

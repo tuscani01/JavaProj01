@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import ver02.Phoneinfo;
+import ver02.PhoneInfo;
 
 public class PhonebookVer02 {
 	
@@ -26,7 +26,7 @@ public class PhonebookVer02 {
 					System.out.print("생년월일: ");
 					String birth =  scan.nextLine();
 					
-					Phoneinfo p = new Phoneinfo(name, phoneNum, birth);
+					PhoneInfo p = new PhoneInfo(name, phoneNum, birth);
 					p.showPhoneInfo();
 					
 				}

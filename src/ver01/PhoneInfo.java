@@ -41,7 +41,7 @@ class PhoneBookManager{
 
 
 
-public class Phoneinfo
+public class PhoneInfo
 {
 	//멤버변수
 	String name;
@@ -49,7 +49,7 @@ public class Phoneinfo
 	String birthday;
 	
 	//생성자
-	public Phoneinfo(String name, String phoneNumber, String birthday)
+	public PhoneInfo(String name, String phoneNumber, String birthday)
 	{
 		super();
 		this.name = name;
@@ -57,7 +57,7 @@ public class Phoneinfo
 		this.birthday = birthday;
 	}
 	//생년월일 필수사항 아니며 인자 없는 경우 null로 초기화
-	public Phoneinfo(String name, String phoneNumber)
+	public PhoneInfo(String name, String phoneNumber)
 	{
 		super();
 		this.name = name;
