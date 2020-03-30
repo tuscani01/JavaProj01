@@ -1,5 +1,5 @@
 
-	package ver04;
+	package ver06;
 
 	public class PhoneSchoolInfo extends PhoneInfo{
 		
