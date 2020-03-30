@@ -3,6 +3,8 @@
 
 	public class PhoneSchoolInfo extends PhoneInfo{
 		
+		
+		String major;
 		String major; //전공 -대학교 전공
 		int grade; //학년
 		
