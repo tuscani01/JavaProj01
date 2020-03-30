@@ -80,30 +80,7 @@ public class PhoneBookManager
 		}
 	}
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 /*	
 	//멤버변수
@@ -142,10 +119,3 @@ public class PhoneBookManager
 }
 
 */
-	
-	
-	
-	
-	
-	
-	

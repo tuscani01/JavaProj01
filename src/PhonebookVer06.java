@@ -10,7 +10,7 @@ import ver06.MenuItem;
 import ver06.MenuSelectException;
 import ver06.PhoneBookManager;
 
-public class PhoneBookVer06 implements MenuItem{
+public class Phonebookver06 implements MenuItem{
 
 	public static void main(String[] args) {
 		

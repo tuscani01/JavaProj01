@@ -15,14 +15,4 @@ public class PhoneCompanyInfo extends PhoneInfo {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

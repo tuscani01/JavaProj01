@@ -81,30 +81,6 @@ public class PhoneBookManager
 	}
 }
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 /*	
 	//멤버변수
 	String name;
@@ -142,10 +118,4 @@ public class PhoneBookManager
 }
 
 */
-	
-	
-	
-	
-	
-	
 	

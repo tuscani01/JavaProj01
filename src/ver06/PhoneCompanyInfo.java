@@ -14,15 +14,4 @@ public class PhoneCompanyInfo extends PhoneInfo {
 		System.out.println("회사:"+company);
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

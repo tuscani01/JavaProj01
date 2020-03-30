@@ -38,12 +38,6 @@ public void showPhoneInfo() {
 	}
 }
 
-
-
-
-
-
-
 /*
 class PhoneBookManager{
 	
@@ -63,25 +57,6 @@ class PhoneBookManager{
 	}
 }
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 public class PhoneInfo
 {
@@ -163,9 +138,3 @@ public class PhoneInfo
 		
 		}
 	}
-	
-	
-	
-	
-	
-	

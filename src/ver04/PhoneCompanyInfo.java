@@ -12,17 +12,5 @@ public class PhoneCompanyInfo extends PhoneInfo {
 	public void dataAllShow() {
 		super.dataAllShow();
 		System.out.println("회사:"+company);
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
