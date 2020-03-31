@@ -1,20 +1,42 @@
-import ver01.PhoneInfo;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
-public class PhonebookVer05
-{
+import ver05.Menuitem;
+import ver05.PhoneBookManager;
 
-	public static void main(String[] args)
-	{
-	
-		PhoneInfo p1 = new PhoneInfo("리처드해먼드", "010-5474-0909", "69-12-19");
-		PhoneInfo p2 = new PhoneInfo("제임스메이", "010-8484-9564", "63-01-16");
+public class PhonebookVer05 implements Menuitem{
 
+	public static void main(String[] args) {
 		
-		p1.showPhoneInfo();
-		p2.showPhoneInfo(); //생년월일 입력X
+		PhoneBookManager pm = new PhoneBookManager();
 		
-		
-
+		while(true) {
+			Scanner scanner = new Scanner(System.in);
+			
+			try {
+				pm.printMenu();
+				int user = scanner.nextInt();
+//				scanner.nextLine();
+				
+				if(user == dataInput) {
+					pm.dataInput();
+				} else if(user == dataSearch) {
+					pm.dataSearch();
+				} else if(user == dataDelete) {
+					pm.dataDelete();
+				} else if(user == dataAllShow) {
+					pm.dataAllShow();
+				} else if(user == end) {
+					System.out.println("프로그램 종료");
+					scanner.close();
+					break;
+				} else {
+					System.out.println("잘못 입력했습니다");
+				}
+			}
+			catch(InputMismatchException e) {
+				System.out.println("잘못 입력했습니다");
+			}
+		}
 	}
-
 }

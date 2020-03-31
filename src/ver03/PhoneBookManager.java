@@ -1,8 +1,12 @@
 package ver03;
 
+import java.util.Scanner;
 public class PhoneBookManager
 {
-
+	Scanner scanner = new Scanner(System.in);
+	PhoneInfo[] phoneInfo = new PhoneInfo[99];
+	int dataNum = 0;
+	
 	//메뉴출력
 	public void printMenu() {
 	
@@ -16,6 +20,7 @@ public class PhoneBookManager
 	}
 	//입력
 	public void dataInput() {
+		
 		System.out.println("데이터 입력 시작");
 		System.out.print("이름 : ");
 		String name = scanner.nextLine();

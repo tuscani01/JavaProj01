@@ -1,12 +1,14 @@
 import java.io.IOException;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import ver08.Menuitem;
 import ver08.MenuSelectException;
 import ver08.PhoneBookManager;
+import java.util.*;
 
-public class PhoneBookVer08 implements Menuitem{
+public class PhonebookVer08 implements Menuitem{
 
 	public static void main(String[] args) throws IOException {
 		
@@ -45,7 +47,6 @@ public class PhoneBookVer08 implements Menuitem{
 				System.out.println("잘못 입력했습니다.\n");
 //				System.out.println("\n=====메뉴 선택 부분 InputMismatchException 발생=====\n"); //주석
 			}
-
 		}
 	}
 }

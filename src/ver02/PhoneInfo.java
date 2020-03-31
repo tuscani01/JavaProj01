@@ -10,19 +10,11 @@ public class PhoneInfo
 	//생성자
 	public PhoneInfo(String name, String phoneNumber, String birthday)
 	{
-		super();
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.birthday = birthday;
 	}
-	//생년월일 필수사항 아니며 인자 없는 경우 null로 초기화
-	public PhoneInfo(String name, String phoneNumber, String birthday)
-	{
-		super();
-		this.name = name;
-		this.phoneNumber = phoneNumber;
-		this.birthday = null;
-	}
+	
 	//정보출력 메소드
 	public void showPhoneInfo()  
 	{

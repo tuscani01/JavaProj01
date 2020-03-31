@@ -5,14 +5,12 @@ public class PhoneCompanyInfo extends PhoneInfo {
 	
 	public PhoneCompanyInfo(String name, String phoneNumber, String company) {
 		super(name, phoneNumber);
-		this.emp = company;
+		this.company = company;
 	}
 	
 	@Override
-	public void dataAllShow() {
-		super.dataAllShow();
+	public void showPhoneInfo() {
+		super.showPhoneInfo();
 		System.out.println("회사:"+company);
-		
 	}
-	
 }

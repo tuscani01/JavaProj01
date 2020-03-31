@@ -56,29 +56,45 @@ public class PhoneBookManager
 		
 		for(int i=0; i<dataNum; i++) {
 			if(delete.equals(phoneInfo[i].name)) {
-				phoneInfo[i] = null;
-				System.out.println("데이터 삭제 완료");
 				
-				for(int j=i; j<dataNum; j++)
+				for(int j=i; j<dataNum; j++) {
 					phoneInfo[i] = phoneInfo[i+1];
+				}
 				dataNum--;
+				phoneInfo[dataNum] = null;
 				a = true;
-					
+				
+				System.out.println("데이터 삭제 완료");
+				break;
 			}
 		}
 		if(!a) System.out.println("입력한 정보와 일치한 정보 없다");
 	}
 	//주소록 전체 출력
 	public void dataAllShow() {
+		
 		if(dataNum == 0) {
 		System.out.println("입력된 정보 없다");
 		} else {
 			System.out.println("전체정보 출력");
+			
 			for(int i=0; i<dataNum; i++) {
+				
 				phoneInfo[i].showPhoneInfo();
 			}
 		}
 	}
+
+	//사용자 정의 에러
+	public int userNum(int user) throws MenuSelectException{
+		
+		if(user<1 || user>5) {
+			MenuSelectException ex = new MenuSelectException();
+			throw ex;
+		}
+		return user;
+	}
+	
 }
 	
 /*	

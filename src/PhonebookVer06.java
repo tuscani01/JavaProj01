@@ -1,29 +1,23 @@
-import ver01.PhoneInfo;
-
-public class PhonebookVer06
-{
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import ver06.MenuItem;
+import ver06.Menuitem;
 import ver06.MenuSelectException;
 import ver06.PhoneBookManager;
 
-public class Phonebookver06 implements MenuItem{
+public class PhonebookVer06 implements Menuitem{
 
 	public static void main(String[] args) {
 		
 		PhoneBookManager pm = new PhoneBookManager();
-		MenuSelectException ex = new MenuSelectException();
 		
 		while(true) {
 			Scanner scanner = new Scanner(System.in);
 			
 			try {
 				pm.printMenu();
-				int user = ex.userNum();
-//				scanner.nextLine();
+				int user = pm.userNum(scanner.nextInt());
+				scanner.nextLine();
 				
 				if(user == dataInput) {
 					pm.dataInput();

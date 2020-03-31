@@ -1,8 +1,15 @@
 package ver04;
 
+import java.util.Scanner;
+
 public class PhoneBookManager
 {
 
+	//메뉴출력
+	Scanner scanner = new Scanner(System.in);
+	PhoneInfo[] phoneInfo = new PhoneInfo[99];
+	int dataNum = 0;
+	
 	//메뉴출력
 	public void printMenu() {
 	
@@ -17,18 +24,70 @@ public class PhoneBookManager
 	//입력
 	public void dataInput() {
 		System.out.println("데이터 입력 시작");
+		
+		while(true) {
+			try {
+				System.out.println("1.일반, 2.동창, 3.회사, 4.뒤로가기 \n선택>>");
+				int user = scanner.nextInt();
+				scanner.nextLine();
+				if(user == 1) {
+				
 		System.out.print("이름 : ");
 		String name = scanner.nextLine();
 		System.out.print("전화번호 : ");
 		String phone = scanner.nextLine();
-		System.out.print("생년월일 : ");
-		String birth = scanner.nextLine();
 		
-		phoneInfo[dataNum] = new PhoneInfo(name, phone, birth);
+		phoneInfo[dataNum] = new PhoneInfo(name, phone);
 		dataNum++;
 		System.out.println("데이터 입력이 완료되었다");
+		break;
+		
+	} else if(user == 2) {
+	
+		System.out.print("이름 : ");
+		String name = scanner.nextLine();
+		System.out.print("전화번호 : ");
+		String phone = scanner.nextLine();
+		System.out.print("전공 : ");
+		String major = scanner.nextLine();
+		System.out.print("학년 : ");
+		int grade = scanner.nextInt();
+		
+		phoneInfo[dataNum] = new PhoneSchoolInfo(name, phone, major, grade);
+		dateNum++;
+		System.out.println("데이터입력 완료");
+		break;
+		
+	} else if(user == 3) {
+		
+		System.out.print("이름 : ");
+		String name = scanner.nextLine();
+		System.out.print("전화번호 : ");
+		String phone = scanner.nextLine();
+		System.out.print("회사 : ");
+		String company = scanner.nextLine();
+		
+		
+		phoneInfo[dataNum] = new PhoneCompanyInfo(name, phone, company);
+		dateNum++;
+		System.out.println("데이터입력 완료");
+		break;
+		
+	} else if(user == 4) {
+		break;
+	} else {
+		System.out.println("잘못 입력되었다");
 	}
 	
+			}
+		}
+		catch(Exception e) {
+			System.out.println("잘못 입력했다");
+			scanner = new Scanner(System.in);
+		}
+	}
+}
+		
 	//검색부분
 	public void dataSearch() {
 		
@@ -78,7 +137,6 @@ public class PhoneBookManager
 				phoneInfo[i].showPhoneInfo();
 			}
 		}
-	}
 }
 
 	

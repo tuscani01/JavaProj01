@@ -2,7 +2,6 @@
 	package ver04;
 
 	public class PhoneSchoolInfo extends PhoneInfo{
-		
 		String major; //전공
 		int grade; //학년
 		
@@ -11,6 +10,10 @@
 			super(name, phoneNumber);
 			this.major = major;
 			this.grade = grade;
+		}
+		
+		@Override
+		public void showPhoneInfo() {
 			System.out.println("전공 : " + major);
 			System.out.println("학년 : " + grade);
 		}
